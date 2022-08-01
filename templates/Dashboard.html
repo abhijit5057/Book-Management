@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block body %}
+  <h2>Dashboard</h2>
+<div class="container p-3 my-3 border">
+
+  <h1>Author - {{user}}</h1>
+  <h2>Books Of Author</h2>
+  {% for i in book %}
+  <p>{{forloop.counter}}-{{i.name}}</p>
+  {% endfor %}
+</div>
+
+
+{% endblock body  %} 
